@@ -1,0 +1,5 @@
+/* Example of pointers/adresses usages */
+
+int* x = &0;
+x.get();
+x.set(1);

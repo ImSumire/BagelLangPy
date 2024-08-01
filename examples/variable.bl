@@ -1,0 +1,10 @@
+/* Example of variable declarations */
+
+// Explicitly typed
+int x = 1;
+bool open = true;
+string hello = "Hello World!";
+Option<string> content = Some("");
+
+// Implicitly typed
+auto y = 3.14;

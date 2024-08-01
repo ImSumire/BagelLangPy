@@ -1,0 +1,33 @@
+/* Example of pattern matching */
+
+/* bool is_empty(string str) {
+    match (str) {
+        | "" -> {return true;}
+        | _ -> {
+            Printf.printf("It's not empty!");
+            return false;
+        }
+    }
+} */
+
+int int<T>(T x) {
+    match (Obj.magic(x)) {
+        // float
+        | f when (Obj.tag(Obj.repr(f))) == 11 -> return int_of_float(Obj.magic(f));
+        // int
+        | i when (Obj.tag(Obj.repr(i))) -> return Obj.magic(i);
+        // string
+        | s when (Obj.tag(Obj.repr(s))) -> return int_of_string(Obj.magic(s));
+        // Incompatible
+        | _ -> failwith("Invalid argument, cannot convert into integer");
+    }
+}
+
+/* int factorial(int n) {
+    match (n) {
+        | 0, 1 -> return 1
+        | _ -> {
+            return n * factorial(n - 1);
+        }
+    }
+} */
