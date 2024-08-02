@@ -7,7 +7,7 @@
     ██████╔╝██║  ██║╚██████╔╝███████╗███████╗
     ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝
     ︵‿︵‿୨♡୧‿︵‿︵
-    your shortcut to smooth OCaml coding
+    better syntax ocaml (subjectively)
   </pre>
 
   [![License: GNU](https://img.shields.io/badge/License-GNU-yellow?style=for-the-badge)](https://www.gnu.org/)
@@ -51,7 +51,7 @@ int add(int a, int b) {
     return a + b;
 }
 
-void main() {
+unit main() {
     ...
 }
 ```
